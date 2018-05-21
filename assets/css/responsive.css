@@ -1,0 +1,27 @@
+@media only screen and (max-width: 750px) {
+    .home-content h1 {
+        font-size: 12vw;
+    }
+    .home-content h4 {
+        width: 90%;
+    }
+    .about-profile h1 {
+        font-size: 50px;
+        padding-top: 15px;
+    }
+    .videos h1 {
+        font-size: 50px;
+    }
+    .videos h4 {
+        width: 90%;
+    }
+    .contact {
+        padding-right: 0;
+    }
+    .form {
+        padding-right: 10%;
+    }
+    .footer h4 {
+        padding: 5px 3%;
+    }
+}
