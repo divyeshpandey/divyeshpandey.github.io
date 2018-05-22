@@ -301,6 +301,26 @@ ul.sos li a i {
     border: none;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+/*Experience */
+.experience{background: #252525; padding: 9% 0}
+.experience h2{color:#fff; font-size: 70px; font-weight: 900;}
+.experience h2 span{color: #FFEB3B;}
+
+.experience ul li{ width: 100%; display: inline-block; font-weight: 600; padding: 5px 20px; color: #fff;}
+.experience ul li span.yellowText{color: #FFEB3B;}
+.experience ul li span.companyName{color: #959595;}
+
+.experience .clientstext{width: 100%; display: inline-block; font-weight: 600; padding: 5px 20px; color: #959595;}
+
+
+
+
 /*-------------------------------------------------*/
 /*--------------------Footer----------------------*/
 /*-----------------------------------------------*/
