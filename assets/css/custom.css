@@ -303,7 +303,10 @@ ul.sos li a i {
     text-transform: uppercase;
 }
 
-
+.form ul {width: 100%; display: inline-block;}
+.form ul li{width: 100%; display: inline-block; padding: 10px 0; color: #222; font-size: 16px; }
+.form ul li a{width: 100%; display: inline-block; padding: 0; color: #222; text-decoration: none; }
+.form ul li i{width: 40px; font-size: }
 
 
 
@@ -349,7 +352,8 @@ ul.sos li a i {
 .footer ul {
     clear: both;
     text-align: center;
-    padding-bottom: 5%;
+    display: inline-block;
+    width: 100%;
 }
 .footer p {
     text-align: center;
