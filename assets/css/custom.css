@@ -146,7 +146,8 @@ ul li {
 ul.sos {
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    float: right;
 }
 ul.sos li {
     list-style-type: none;
@@ -359,3 +360,35 @@ ul.sos li a i {
 hr {
     opacity: 0.4;
 }
+.downloadCV{ margin-top: 20px; float: left; font-weight: 600; padding: 10px 40px; background-color: #FFEB3B; color: #222; font-weight: 600; text-decoration: none;    font-size: 16px;    border: none;    text-transform: uppercase; text-decoration: none;}
+.downloadCV:hover{text-decoration: none; color: #222; background: #edd925;}
+
+
+.skills{ padding: 9% 10%; background-color: #f8f8f8; }
+.progress-item { position: relative; width: 80%}
+.progress-item .progress {height: 4px; box-shadow: none; border-radius: 5px; background-color: #c6c6c6}
+.progress-item .progress-bar {  background-color: #FFEB3B;    box-shadow: none;    text-align: right;}
+.progress-item .progress-percent {font-size: 10px; background-color: #313131; position: absolute;    top: -5px;    padding: 0 8px;    border-radius: 3px;}
+.progress-item .progress-percent::before {    content: "";    position: absolute;    left: 0;    bottom: -4px;    border-top: 6px solid #313131;    border-right: 8px solid transparent;}
+
+.skills h1 { font-size: 70px; font-weight: 900; color: rgba(0, 0, 0, 0.8); padding: 0; margin: 0; margin-bottom: 40px;}
+.skills h1 span { color: #FFEB3B;}
+.skills  h3 {    font-size: 22px;    color: rgba(0, 0, 0, 0.8);    font-weight: 400;    padding: 0;    margin: 0;    padding-top: 5px;    padding-bottom: 20px;    color: #222;    width: 70%;}
+
+
+.showmore{text-align:center;}
+.showmore button{margin-top: 20px; float: left; font-weight: 600; padding: 10px 40px; background-color: #FFEB3B; color: #222; font-weight: 600; text-decoration: none;    font-size: 16px;    border: none;    text-transform: uppercase; text-decoration: none; display: inline-block; width: 100%; cursor: pointer; border-radius: 0}
+.showmore button:hover,
+.showmore button:focus,
+.showmore button:active,
+.showmore button:visited{background-color: #edd925; color: #222}
+
+
+.modalBoxUl{ width: 100%; display: inline-block;}
+.modalBoxUl li{width: 33%; padding: 15px; float: left;}
+.modalBoxUl li a{width:100%; padding:60px 20px; color: #222; font-weight: 700; display: inline-block; text-align: center; box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; position: relative;}
+.modalBoxUl li a span{position: relative; color: #222; font-weight: 700; z-index: 99;}
+.modalBoxUl li a:hover{}
+.modalBoxUl li a:after{content:''; width: 80%; height: 80%; position: absolute; left: 10%; top: 10%; background: rgba(255, 235,59,0.8); display: inline-block;}
+
+.modalBoxUl li.pro1 a{background: url(../images/video/pro1.jpg) no-repeat; background-size:cover;}
