@@ -385,10 +385,43 @@ hr {
 
 
 .modalBoxUl{ width: 100%; display: inline-block;}
-.modalBoxUl li{width: 33%; padding: 15px; float: left;}
-.modalBoxUl li a{width:100%; padding:60px 20px; color: #222; font-weight: 700; display: inline-block; text-align: center; box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; position: relative;}
-.modalBoxUl li a span{position: relative; color: #222; font-weight: 700; z-index: 99;}
-.modalBoxUl li a:hover{}
-.modalBoxUl li a:after{content:''; width: 80%; height: 80%; position: absolute; left: 10%; top: 10%; background: rgba(255, 235,59,0.8); display: inline-block;}
+.modalBoxUl li{width: 32%; margin:0 2% 20px;  float: left; position: relative;}
+.modalBoxUl li:nth-child(3n+1){margin-left: 0; margin-right: 0}
+.modalBoxUl li:nth-child(3n+3){margin-right: 0; margin-left: 0}
+.modalBoxUl li a{width:100%; padding:20px 20px;   color: #222; font-weight: 700; display: inline-block; text-align: center; box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; position: relative;}
+.modalBoxUl li a span{position: relative; padding:60px 20px; color: #222; font-weight: 700; z-index: 99; width: 100%; background: rgba(255, 235,59,0.8); display: inline-block;}
+.modalBoxUl li:hover a span{ background: rgba(255, 235,59,1)}
+/*.modalBoxUl li a span:after{content:''; width: 80%; height: 80%; position: absolute; left: 10%; top: 10%; background: rgba(255, 235,59,0.8); display: inline-block; -webkit-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+.modalBoxUl li:hover a:after{ background: rgba(255, 235,59,1);}
+*/
+
 
 .modalBoxUl li.pro1 a{background: url(../images/video/pro1.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro2 a{background: url(../images/video/pro2.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro3 a{background: url(../images/video/pro3.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro4 a{background: url(../images/video/pro4.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro5 a{background: url(../images/video/pro5.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro6 a{background: url(../images/video/pro6.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro7 a{background: url(../images/video/pro7.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro8 a{background: url(../images/video/pro8.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro9 a{background: url(../images/video/pro9.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro10 a{background: url(../images/video/pro10.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro11 a{background: url(../images/video/pro11.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro12 a{background: url(../images/video/pro12.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro13 a{background: url(../images/video/pro13.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro14 a{background: url(../images/video/pro14.jpg) no-repeat; background-size:cover;}
+.modalBoxUl li.pro15 a{background: url(../images/video/pro15.jpg) no-repeat; background-size:cover;}
+
+.modalBoxUl li::before, 
+.modalBoxUl li::after{  content:"";  width: 0;  height: 4px;  position: absolute;  transition: all 0.2s linear;  background: #ed373d;  z-index: 2;}
+.modalBoxUl li a::before, .modalBoxUl li a::after{  content:"";  width:4px;  height:0;  position: absolute;  transition: all 0.2s linear;  background: #ed373d;  z-index: 3;}
+.modalBoxUl li:hover::before, .modalBoxUl li:hover::after{  width: 100%;}
+.modalBoxUl li:hover a::before, .modalBoxUl li:hover a::after{  height: 100%;}
+.modalBoxUl li::after{  left: 0;  bottom: 0;  transition-delay: 0.6s;}
+.modalBoxUl li a::after{  transition-delay: 0.4s;  right: 0;  bottom: 0}
+.modalBoxUl li::before{ right: 0; top: 0; transition-delay: 0.2s;}
+.modalBoxUl li a::before{transition-delay: 0s; left: 0;  top: 0;}
+.modalBoxUl li:hover::after{  transition-delay: 0s;}
+.modalBoxUl li:hover a::after{  transition-delay: 0.2s;}
+.modalBoxUl li:hover::before{  transition-delay: 0.4s;}
+.modalBoxUl li:hover a::before{  transition-delay: 0.6s;}
