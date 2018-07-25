@@ -111,7 +111,7 @@
         height: 35px;
     } 
     .navbar-brand{
-        max-width: 300px;
+        max-width: 80%;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         text-align: left; 
@@ -137,15 +137,5 @@
     html {
         font-size: 60.5%;
     }
-
-
-
-
-
-
-
-
-
-
 }
 
