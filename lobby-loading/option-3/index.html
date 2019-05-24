@@ -17,10 +17,21 @@
       img{width: 100%;}
       .mainLobby{position: relative; height: 100vh;}
       .imageBox{position: relative; width: 100%;}
-      .buttonOpaque{display: inline-block; background: rgba(0,0,0,0.8); text-align: center; height: 8%; width: 37.1%; position: absolute; bottom: 7.2%; margin: 0 auto; left:31.1%; border-radius: 10px;}
+      .imageBox:after{position: absolute; content: ''; background: rgba(255, 255, 255, 0.3); text-align: center; height: 8%; width: 37.4%; position: absolute; bottom: 7.2%; margin: 0 auto; left:31.1%; border-radius: 10px;}
+      .buttonOpaque{display: inline-block; background: rgba(0,0,0,0.6); text-align: center; height: 8%; width: 37.1%; position: absolute; bottom: 7.2%; margin: 0 auto; left:31.1%; border-radius: 10px;}
       .showbox {position: absolute; bottom: 0; left: 0;  right: 0; width: 100%; text-align: center;}
       .footer{position: fixed; width: 100%; left: 0; bottom: 0;}
       .ispinner {width: 70px;  height: 70px; display: inline-block; position: relative; margin-top: 20px;}
+      .options{position: fixed; right: 15px; top: 32%; font-family: arial;}
+        .options:before{position: fixed; top: 0; bottom: 0; right: 0; left: 0; background: #00000099; width: 100vh; height: 100vh; content: ''; z-index: 0; visibility: hidden;opacity: 0;transition: all 0.5s ease-in-out;}
+        .options.openMenu:before{visibility: visible; opacity: 1;  }
+        .options .optionIcon{ background: #8f0000; width: 100px; height: 100px; border-radius: 50%; color:#fff; text-align: center; opacity: 0.9; transition: all 0.2s ease-in-out; }
+        .options .optionIcon > a{ text-decoration: none; color:#fff; font-size: 80px; line-height: 100px;}
+        .options.openMenu .optionIcon{transform: rotate(45deg);}
+        .options ul{position: absolute; list-style: none; right: 10px; top: 100px; visibility: hidden; transition: all 0.5s ease-in-out; max-height: 0; overflow: hidden;padding: 10px;transition: all 0.5s ease-in-out;}
+        .options.openMenu ul{visibility: visible;  max-height: 1000px;}
+        .options ul li{    background: #fff; border-radius: 10px; padding: 15px 25px; text-align: right; white-space: nowrap; margin-top: 20px; box-shadow: 0 0px 13px #6666667d; }
+        .options ul li a{ color: #666; font-size: 35px; text-decoration: none;}
     </style>
   </head>
   
@@ -46,10 +57,29 @@
             </div>
           </div>
         </div>
-        <div class="footer">
-          <img src="mainPage-bottom.png" alt="mainPage">
+        <div class="options"id="menu">
+        <div class="optionIcon">
+          <a id="menu-button" onclick="myFunction()" href="javascript:void(0);">+</a>
         </div>
+        <ul>
+          <li><a href="https://divyesh.art/lobby-loading/option-1/index.html">Option-1</a> </li>
+          <li><a href="https://divyesh.art/lobby-loading/option-1/index.html">Option-2</a></li>
+          <li><a href="javascript:void(0);">Option-3</a></li>
+          <li><a href="https://divyesh.art/lobby-loading/option-1/index.html">Option-4</a></li>
+          <li><a href="https://divyesh.art/lobby-loading/option-1/index.html">Option-5</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <img src="mainPage-bottom.png" alt="mainPage">
+      </div>
     </div>
-    </div>
+  </div>
+   
+  <script type="text/javascript">
+    function myFunction() {
+    var element = document.getElementById("menu");
+    element.classList.toggle("openMenu");
+    }
+</script>
   </body>
 </html>

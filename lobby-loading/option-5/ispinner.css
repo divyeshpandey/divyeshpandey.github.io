@@ -50,7 +50,7 @@
   .ispinner.ispinner--white .ispinner__blade {
     background-color: white; }
   .ispinner.ispinner--gray .ispinner__blade {
-    background-color: #fff; }
+    background-color: #8c8c8c; }
   .ispinner.ispinner--large {
     width: 35px;
     height: 35px; }
@@ -61,8 +61,8 @@
 
 @keyframes iSpinnerBlade {
   0% {
-    opacity: 1; }
+    opacity: 0.85; }
   50% {
-    opacity: 0.50; }
+    opacity: 0.25; }
   100% {
-    opacity: 0.50; } }
+    opacity: 0.25; } }
