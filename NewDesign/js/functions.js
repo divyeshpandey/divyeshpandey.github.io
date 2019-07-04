@@ -626,12 +626,17 @@ jQuery(function ($) {
       .tiSettings({
          speed: 700
       })
-      .tiPause(1000)
+      .tiPause(2000)
       .tiSettings({
          speed: 50
       })
       .tiDelete()
-      .tiType('Product Designer');
+      .tiType('Product Designer')
+      .tiPause(2000)
+      .tiSettings({
+         speed: 50
+      });
+
 
 
 
