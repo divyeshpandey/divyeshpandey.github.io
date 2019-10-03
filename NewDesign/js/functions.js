@@ -622,7 +622,7 @@ jQuery(function ($) {
          autoStart: false,
          loop: true,
       })
-      .tiType('UI/UX Manager')
+      .tiType('UI/UX Designer')
       .tiSettings({
          speed: 700
       })
