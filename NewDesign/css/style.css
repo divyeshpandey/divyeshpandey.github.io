@@ -4527,14 +4527,14 @@ footer p {
 
 
 /*Pre loader New*/
-.loader-outer { bottom: 0;  height: 100%;  left: 0;  position: fixed;  right: 0;  top: 0;  width: 100%;  z-index: 1111;  background:#fff;  overflow-x:hidden;
+.loader { bottom: 0;  height: 100%;  left: 0;  position: fixed;  right: 0;  top: 0;  width: 100%;  z-index: 1111;  background:#fff;  overflow-x:hidden;
 }
-.loader {--path: #2F3545; --dot: #5628EE; --duration: 3s;  width: 44px;  height: 44px;  position: relative;}
-.loader:before {  content: '';  width: 6px;  height: 6px;  border-radius: 50%;  position: absolute;  display: block; background: var(--dot); top: 37px;  left: 19px; -webkit-transform: translate(-18px, -18px); transform:translate(-18px, -18px);
+.loader-inner-1 {--path: #2F3545; --dot: #5628EE; --duration: 3s;  width: 44px;  height: 44px;  position: absolute; top: 50%; margin-top: -22px; left: 50%; margin-left: -22px;}
+.loader-inner-1:before {  content: '';  width: 6px;  height: 6px;  border-radius: 50%;  position: absolute;  display: block; background: var(--dot); top: 37px;  left: 19px; -webkit-transform: translate(-18px, -18px); transform:translate(-18px, -18px);
   -webkit-animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite; animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;}
-.loader svg {  display: block;  width: 100%;  height: 100%;}
-.loader svg rect{  fill: none;  stroke: var(--path);  stroke-width: 10px;  stroke-linejoin: round;  stroke-linecap: round;}
-.loader svg rect {  stroke-dasharray: 192 64 192 64;  stroke-dashoffset: 0;  -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite; animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;}
+.loader-inner-1 svg {  display: block;  width: 100%;  height: 100%;}
+.loader-inner-1 svg rect{  fill: none;  stroke: var(--path);  stroke-width: 10px;  stroke-linejoin: round;  stroke-linecap: round;}
+.loader-inner-1 svg rect {  stroke-dasharray: 192 64 192 64;  stroke-dashoffset: 0;  -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite; animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;}
 
 
 @-webkit-keyframes pathRect {
