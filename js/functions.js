@@ -403,7 +403,7 @@ jQuery(function ($) {
             nav: true,
          },
          0: {
-            items: 1,
+            items: 2,
             nav: false,
          }
       }
