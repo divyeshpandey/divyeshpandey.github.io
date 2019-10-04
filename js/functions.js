@@ -405,6 +405,7 @@ jQuery(function ($) {
          0: {
             items: 2,
             nav: false,
+            margin: 10,
          }
       }
    });
