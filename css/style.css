@@ -3689,6 +3689,11 @@ ul.top-right li a:hover.instagram{
         height: 60px;
         width: 60px;
     }
+    .cbp .cbp-item{border-radius: 4px; border: 1px solid #ffe0e4;}
+    .cbp-item .overlay.light{opacity: 1; bottom:0px; left:0; right: 0; background: rgba(0,0,0,0.8); top: auto; height: 120px; color: #fff; visibility: visible; transform: translate(0,0);  }
+    .cbp-item .overlay.light ul.social li{margin-left: 2px; margin-right: 2px;}
+    .cbp-item .overlay.light ul.social li a{border: 2px solid #fff; color: #fff; line-height: 28px; }
+    .cbp-item .overlay.light ul{opacity: 1; transform: scale(1);}
 }
 
 /*-------------------------------*/
