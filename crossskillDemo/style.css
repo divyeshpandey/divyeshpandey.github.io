@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: #384158;
+    /* background:#eee; */
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 95px;
+    background: #7acfd6;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.navbar .logo{
+    color: #e0474c;
+    text-decoration: none;
+}
+.navigation ul li{
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+    /* color: #384158; */
+    color: #fff;
+}
+.navigation ul li .login{
+    padding: 12px 16px;
+    background-color: #e0474c;
+    color: #fff;
+}
+.navigation ul li .login:hover{
+    color: #fff;
+}
+.navigation ul li a:hover{
+    /* color: #7acfd6; */
+} 
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content-left{
+    width: 75%;
+    /* background: #eee; */
+}
+.content .content-right{
+    width: 23%;
+}
+.content-left .search{
+    width: 95%;
+    margin:auto;
+    padding: 30px 0;
+}
+.content-left .search h6{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.input-div{
+    display: flex;
+    justify-content: space-between;
+}
+.input-div input{
+    width: 40%;
+    outline: none;
+    height: 34px;
+    font-size: 18px;
+}
+input[type="text"]{
+    padding: 0 10px;
+}
+.search button{
+    width: 100%;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    background: #e0474c;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.sponsored-section{
+    padding: 20px 0;
+    border: 1px solid #000;
+    margin-top: 16px;
+}
+.sponsored-section h6{
+    font-size: 18px;
+    margin-left: 22px;
+    margin-bottom: 16px;
+}
+.sponsored-courses{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+.sponsored-courses .image{
+    width: 24%;
+    height: 150px;
+    list-style: none;
+    /* border:1px solid #000; */
+}
+.sponsored-courses .image img{
+    width: 100%;
+    height: 100%;
+}
+.trending-section{
+    padding: 20px 0;
+    border: 1px solid #000;
+    margin-top: 68px;
+}
+.trending-section h6 {
+    font-size: 18px;
+    margin-left: 22px;
+    margin-bottom: 16px;
+}
+.trending-skills {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trending-skills .image{
+    list-style: none;
+    width: 24%;
+    height: 150px;
+    margin-bottom: 20px;
+    /* border:1px solid #000; */
+}
+.trending-skills .image img{
+    width: 100%;
+    height: 100%;
+}
+#learningplan{
+    display: none;
+}
+.learning-plan {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.learning-plan div{
+    width: 32%;
+}
+.learning-plan .finish{
+    display: flex;
+    align-items: center;
+}
+.learning-plan .finish h6{
+    /* width: 22%;
+    padding-bottom: 0px !important; */
+}
+.learning-plan .finish .finish-button{
+    width: 78% !important;
+    margin-top: 0px !important;
+}
+.learning-plan .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learning-plan .content h6{
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    background: #7acfd6;
+    color: #fff;
+}
+.learning-plan .content .finish{
+    margin-bottom: 10px;
+}
+.learning-plan .content .finish-button{
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+}
+.learning-plan .content-plan{
+    width: 88%;
+    height: 200px;
+    margin-bottom: 20px;
+    border:1px solid #000;
+}
+.aside{
+    width: 90%;
+    margin: auto;
+    /* border:1px solid #000; */
+}
+.aside-box{
+    width: 100%;
+    margin-top: 70px;
+    border: 1px solid #000;
+}
+.aside .aside-adv{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #000; */
+    margin: 30px 0;
+}
+.aside .aside-adv img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* range slider css */
+
+.rangefilter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rangefilter .timefilter{
+    width: 45%;
+}
+.rangefilter .budgetfilter{
+    width: 45%;
+}
+
+.range-slider {
+    margin: 50px 0;
+}
+.range-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.range-slider__range {
+    -webkit-appearance: none;
+    width: calc(100% - (73px));
+    height: 10px;
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #7acfd6 !important;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+    background: #7acfd6 !important;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+    background: #7acfd6 !important;
+}
+.range-slider__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #14bdee;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+    background: #7acfd6;
+}
+.range-slider__range:active::-moz-range-thumb {
+    background: #7acfd6;
+}
+.range-slider__range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #7acfd6;
+}
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #7acfd6;
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+.range-slider__value:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #7acfd6;
+    border-bottom: 7px solid transparent;
+    content: '';
+}
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+input::-moz-focus-inner, input::-moz-focus-outer {
+    border: 0;
+}
+
+/* range slider css ends*/

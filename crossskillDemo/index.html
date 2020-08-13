@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>CrossSkill</title>
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+                    <a class="logo" href="">Logo</a>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="">Course Reviews</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">Cross Skill Blog</a></li>
+                            <li><a href="">Test Your Skills</a></li>
+                            <li><a href="">Sign up</a></li>
+                            <li><a class="login" href="">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+    <div class="container">
+        <section class="content">
+            <article class="content-left">
+                <div class="search">
+                    <h6>Search and Filters</h6>
+                    <div class="input-div">
+                        <input type="text" placeholder="My Current Skills">
+                        <img src="img/rightarroww.png" style="width: 40px;" alt="">
+                        <input type="text" placeholder="Cross Skill To">
+                    </div>
+                    <div class="rangefilter">
+                            <div class="timefilter">
+                                    <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                                            <span class="range-slider__value">0</span>
+                                          </div>
+                            </div>
+                            <div class="budgetfilter">
+                                    <div class="range-slider">
+                                            <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                                            <span class="range-slider__value">0</span>
+                                          </div>
+                            </div>
+                     </div>
+                        <button onclick="plan();" class="generate">Generate My Learning Plan</button>
+                      <div class="learning-plan" id="learningplan">
+                          <div class="column1">
+                              <div class="content">
+                                  <h6>Day 0</h6>
+                                  <div class="content-plan"></div>
+                              </div>
+                              <div class="content">
+                                    <h6>Day 15</h6>
+                                    <div class="content-plan"></div>
+                                </div>
+                                <div class="content">
+                                        <h6>Day 25</h6>
+                                        <div class="content-plan"></div>
+                                </div>
+                                <div class="content">
+                                        <h6>Day 45</h6>
+                                        <div class="content-plan"></div>
+                                 </div>
+                                 <div class="content finish">
+                                        <h6 class="finish">Day 60</h6>
+                                        <h6 class="finish-button">Course Over</h6>
+                                 </div>
+                                    
+                          </div>
+                          <div class="column2">
+                                <div class="content">
+                                        <h6>Day 0</h6>
+                                        <div class="content-plan"></div>
+                                    </div>
+                                    <div class="content">
+                                          <h6>Day 15</h6>
+                                          <div class="content-plan"></div>
+                                      </div>
+                                       <div class="content finish">
+                                              <h6 class="finish">Day 45</h6>
+                                              <h6 class="finish-button">Course Over</h6>
+                                       </div>
+                          </div>
+                          <div class="column3">
+                                <div class="content">
+                                        <h6>Day 0</h6>
+                                        <div class="content-plan"></div>
+                                    </div>
+                                    <div class="content">
+                                          <h6>Day 15</h6>
+                                          <div class="content-plan"></div>
+                                      </div>
+                                      <div class="content">
+                                              <h6>Day 30</h6>
+                                              <div class="content-plan"></div>
+                                      </div>
+                                       <div class="content finish">
+                                              <h6 class="finish">Day 50</h6>
+                                              <h6 class="finish-button">Course Over</h6>
+                                       </div>
+                          </div>
+                      </div>  
+                </div>
+                <div class="sponsored-section">
+                    <h6>Sponsored Courses</h6>
+                    <div class="sponsored-courses">
+                        <li class="image">
+                            <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                    </div>
+                </div>
+                <div class="trending-section">
+                    <h6>Trending Skills</h6>
+                    <div class="trending-skills">
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                        <li class="image">
+                                <img src="img/react.jpg" alt="">
+                        </li>
+                    </div>
+                </div>
+            </article>
+            <aside class="content-right">
+              <div class="aside-box">
+                <div class="aside">
+                    <div class="aside-adv">
+                        <img src="img/course-review.jpg" alt="">
+                    </div>
+                    <div class="aside-adv">
+                            <img src="img/jobs.jpeg" alt="">
+                    </div>
+                    <div class="aside-adv">
+                            <img src="img/course-review.jpg" alt="">
+                    </div>
+                    <div class="aside-adv">
+                            <img src="img/jobs.jpeg" alt="">
+                    </div>
+                </div>
+              </div>  
+            </aside>
+        </section>
+    </div>   
+    </header>
+</body>
+</html>
